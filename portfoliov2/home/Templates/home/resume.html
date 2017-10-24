@@ -1,0 +1,12 @@
+{% extends "home/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+
+<!-- <object src="{% static 'Home/Resume/resume.pdf' %}"><embed type="pdf" src="{% static 'Home/Resume/resume.pdf '%}"></embed></object> -->
+<iframe src="{% static 'Home/Resume/resume.pdf' %}" style="position:absolute;width: 100%; height: 100%; border: none;"></iframe>
+
+
+
+
+{% endblock content %}

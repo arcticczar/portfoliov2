@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% extends 'home/base.html' %}
+{% load staticfiles %}
+
+{% block content%}
+  <body>
+    <div class="container">
+      <div class="jumbotron" id='head'>
+        <h1>Welcome to Field-test.com</h1>
+
+      </div>
+    </div>
+    {# create a new container for a map #}
+    <div class="container" id='main'>
+      <div class="jumbotron">
+        {# import leaflet #}
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+        integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+         integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+         crossorigin=""></script>
+         Here are the places I've lived in Hawaii:<br>
+         {# create zoom buttons #}
+         <button type="button" name="Laysan" id="Laysan">Laysan</button>
+         <button type="button" name="Oahu" id="Oahu">Oahu</button>
+         <button type="button" name="Maui" id="Maui">Maui</button>
+         <button type="button" name="Hawaii" id="Hawaii">Hawaii</button>
+         <button type="button" name="All" id="All">All</button>
+         <br />
+         <!-- create a new div for the map -->
+         <div id="mapid"></div>
+         <!-- load map javascript to initialize the map -->
+         <script type="text/javascript" src="{% static 'home/js/map.js' %}">
+
+         </script>
+
+
+         </script>
+      </div>
+
+    </div>
+  </body>
+{% endblock %}

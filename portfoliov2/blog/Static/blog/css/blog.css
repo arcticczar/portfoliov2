@@ -1,0 +1,22 @@
+.centerstage{
+  margin:auto;
+}
+
+.postdate{
+  text-align: center;
+}
+
+.posttitle{
+  font-size: 3em;
+  text-align: center;
+}
+
+.postcontent{
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+}
+
+.btn-comment{
+  position: absolute;
+  right: 10px;
+}

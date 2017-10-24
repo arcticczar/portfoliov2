@@ -1,0 +1,31 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="text-center">
+  <div class="jumbotron">
+    <div class="mx-auto" style="margin:2em;">
+      Below are a few examples of my work:
+      <br>
+    </div>
+
+<hr>
+
+    <ul style="list-style-type:none;">
+      <li><a href="{% static 'home/Samples/Impacts_of_wind_speed_and_direction_on_wind_turbine_generator_fatalitiesFINAL.pdf' %}" target="_blank"> Impacts of wind speed and direction on wind turbine generator fatalities</a></li>
+      <p>This is an example of the statistical topics that interest me.</p>
+      <hr>
+      <li><a href="{% static 'home/Samples/MeasuringAndMappingRecreationWithSocialMedia_2016_Stelmach_Beddow.pdf' %}" target="_blank">Measuring and Mapping Recreation With Social Media</a></li>
+      <p>This is my capstone project from my masters program.</p>
+      <hr>
+      <li><a href="{% static 'home/Samples/TR50_Peck_HakalauBarkArthropods_final.pdf' %}" target="_blank">Arthropod Community Structure on Bark of Koa and Ohia at Hakalau National Wildlife Refuge, Hawai'i Island, Hawai'i</a></li>
+      <p>This is a technical report on which I am a co-author.</p>
+      <hr>
+      <li><a href="{% static 'home/Samples/AnnualReports/Kaheawa-Wind-Power-I-HCP-FY-2017-Annual-Report-8-24-17.pdf'%}" target="_blank">Kaheawa Wind Power HCP FY 2017 Annual Report</a></li>
+      <p>This is an annual report from the Kaheawa wind farm where I manage the HCP.</p>
+    </ul>
+  </div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends 'home/base.html' %}
+
+{% block navblock %}
+{% if user.is_authenticated %}
+
+  <div class="nav navbar-nav navbar-right " id="blognav">
+  <ul class="navbar-nav mr-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'blog:post_new' %}">New Post</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'blog:post_draft_list' %}">Drafts</a>
+  </li>
+  </ul>
+
+  </div>
+
+
+{% endif %}
+{% endblock navblock%}
+{% block content %}
+
+
+{% block blogcontent %}
+
+{% endblock blogcontent %}
+
+
+
+{% endblock content %}

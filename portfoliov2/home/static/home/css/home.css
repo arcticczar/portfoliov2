@@ -1,0 +1,20 @@
+#head{
+  text-align: center;
+
+}
+
+h1{
+  color: black;
+}
+
+div{
+  text-align: center;
+}
+
+#mapid {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  position: center;
+
+}
